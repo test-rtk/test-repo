@@ -232,6 +232,16 @@ header{
     
 }
 
+.logo-black{ 
+    display:none; 
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-bottom: 3px;
+}
+
+/* Main navi */
+
 .main-nav{
     float: right;
     list-style: none;
@@ -260,6 +270,29 @@ header{
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
 }
+
+/* Sticky Navi */
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 11px 0;
+    color: #555;
+}
+
+.sticky .main-nav{ margin-top: 15px; }
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 /* ----------------------------------------------- */
 /* FEATURES */

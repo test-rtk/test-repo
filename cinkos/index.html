@@ -19,23 +19,24 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/logoWhite.png" alt="Mr.Činkos" class="logo">
+                    <img src="resources/img/logoBlack.png" alt="Mr.Činkos" class="logo-black">
                     <ul class="main-nav">
-                        <li><a href="#">Pancake delivery</a></li>
+                        <li><a href="#features">Pancake delivery</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#plans">Sign up</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Sugary paradise.</h1>
-                <a class="btn btn-full" href="#">I want diabetes</a>
-                <a class="btn btn-ghost" href="#">View more</a>
+                <a class="btn btn-full js--scroll-to-plans" href="#">I want diabetes</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">View more</a>
                 
             </div>
             
         </header>
-        <section class="section-features">
+        <section class="section-features js--section-features" id="features">
             <div class="row">
                 
                 <h2> Sweetest food just few clicks away.</h2>
@@ -186,7 +187,7 @@
         </section>
         
         
-        <section class="section-plans">
+        <section class="section-plans js--section-plans" id="plans">
             <div class="row">
                 <h2>Get our crepes daily without ordering</h2>
             </div>
@@ -349,11 +350,18 @@
             
         </footer>
         
-        
-    </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+        
+    </body>
+    
+     
+    
 
 
 </html>
