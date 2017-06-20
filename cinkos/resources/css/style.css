@@ -271,6 +271,20 @@ header{
     border-bottom: 2px solid #e67e22;
 }
 
+/* Mobile navi */
+
+.mobile-nav-icon{
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #fff;
+}
+
 /* Sticky Navi */
 
 .sticky{
@@ -554,6 +568,19 @@ input[type=checkbox]{
 
 *:focus{outline:none;}
 
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.success{ background-color: rgba(38, 191, 68, 0.8); }
+
+.error{ background-color: rgba(209, 46, 46, 0.8); }
+
 /* ----------------------------------------------- */
 /* FOOTER */
 /* ----------------------------------------------- */
@@ -594,9 +621,6 @@ footer{
     border: 0;
     color: #888;
     -webkit-transition: color 0.2s;
-    -ms-transition: color 0.2s;
-    -ms-transition: color 0.2s;
-    -ms-transition: color 0.2s;
     transition: color 0.2s;
 }
 

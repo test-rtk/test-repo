@@ -2,7 +2,9 @@
  <html lang="en">
     <head>
         
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mr.Cinkos is a premium pancake service for all ages.">
         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
@@ -21,12 +23,13 @@
                 <div class="row">
                     <img src="resources/img/logoWhite.png" alt="Mr.Činkos" class="logo">
                     <img src="resources/img/logoBlack.png" alt="Mr.Činkos" class="logo-black">
-                    <ul class="main-nav">
+                    <ul class="main-nav js--main-nav">
                         <li><a href="#features">Pancake delivery</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#plans">Sign up</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
@@ -169,19 +172,19 @@
                 <div class="col span-1-of-3">
                     <blockquote>
                          Mr. Cinkos is best one around. Waldinger and Petar Pan are nuttin.
-                        <cite><img src="resources/img/customer-2.png">Luke Jackson</cite>
+                        <cite><img src="resources/img/customer-2.png" alt="customer-1-photo">Luke Jackson</cite>
                     </blockquote>
                 </div>
                 <div class="col span-1-of-3">
                     <blockquote>
                          So delicious and energetic. When I eat one of these crepes it is like i drank 3 redbulls.
-                        <cite><img src="resources/img/customer-1.png">Enna Miletage</cite>
+                        <cite><img src="resources/img/customer-1.png" alt="customer-1-photo">Enna Miletage</cite>
                     </blockquote>
                 </div>
                 <div class="col span-1-of-3">
                     <blockquote>
                          I just wanna order thousand of each with every addition and bath in it.
-                        <cite><img src="resources/img/customer-3.png">Boron Homeouvicz</cite>
+                        <cite><img src="resources/img/customer-3.png" alt="customer-1-photo">Boron Homeouvicz</cite>
                     </blockquote>
                 </div>
             </div>
@@ -257,13 +260,27 @@
             </div>
         </section>
         
-        <section class="section-form">
+        <section class="section-form" id="form">
             <div class="row">
                 <h2>Send us your review!</h2>
             </div>
             <div class="row">
-                <form method="post" action="#" class="contact-form">
+                <form method="post" action="mailer.php" class="contact-form">
                     <div class="row">
+                        
+                        <?php
+                        if($_GET['success'] == 1) {
+                            echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>"
+                        }
+                        if($_GET['success'] == -1) {
+                            echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>"
+                        }                        
+                        ?>
+                        
+                    </div>
+                    
+                    
+                    <div class="row">                     
                         <div class="col span-1-of-3">
                             <label for="name">Name</label>
                         </div>
