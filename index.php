@@ -2,6 +2,15 @@
     session_start();
     require_once "security.php";
         
+    /*if($_GET['success'] == 1) {
+        echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+    }
+    else if($_GET['success'] == -1) {
+        echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
+    }  */
+
+
+
     $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
     $fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
 ?>
@@ -272,10 +281,20 @@
             <div class="row">
                 <h2>Send us your review!</h2>
             </div>
-            <div class="row">  
+            <div class="row">
+                
+                
+                
+                
+                
+                
+                
+                
                 <form method="post" action="mailer.php" class="contact-form">
                     <div class="row">
-                    
+                        
+                        
+                        
                     <?php
                         if(isset($_GET['success'])){
                             if($_GET['success'] == 1) {
@@ -287,7 +306,12 @@
                         }
                     ?>
 
+                        
+                    
+                       
+                        
                     </div>
+                    
                     
                     <div class="row">                     
                         <div class="col span-1-of-3">
@@ -386,10 +410,16 @@
     <script src="resources/js/script.js"></script>
         
     </body>
+    
+     
+    
+
 
 </html>
 
 <?php
+
 unset($_SESSION['errors']);
 unset($_SESSION['fields']);
+
 ?>
