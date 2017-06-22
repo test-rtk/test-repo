@@ -285,10 +285,6 @@
                 
                 
                 
-                 
-                
-                
-                
                 
                 <form method="post" action="mailer.php" class="contact-form">
                     <div class="row">
@@ -309,13 +305,13 @@
                     
                     
                         
-                        
-                    <!--<?php if(!empty($errors)): ?>
+                    <!--    
+                    < ? php if(!empty($errors)): ?>
                         <div class="panel">
                             <ul><li><?php echo implode('</li><li>', $errors); ?></li></ul>
                         </div>   
-                    <?php endif;?>   
-                        -->
+                    < ? php endif;?>   
+                    -->    
                         
                     </div>
                     
