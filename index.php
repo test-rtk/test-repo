@@ -276,7 +276,8 @@
                             else if($_GET['success'] == -1) {
                                 echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
                             }  
-                        }
+                        } var_dump($_POST);
+                        
                         ?>
                         
                     </div>
