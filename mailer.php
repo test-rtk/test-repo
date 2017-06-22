@@ -32,7 +32,7 @@
             $m->isSMTP();
             $m->SMTPAuth = true;
             
-            //$m->SMTPDebug = 1;
+            $m->SMTPDebug = 1;
             
             $m->Host = 'smtp.gmail.com';
             $m->Username = 'mrcinkossend@gmail.com';
