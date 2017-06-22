@@ -269,14 +269,12 @@
                     <div class="row">
                         
                         <?php
-                        if(isset($_GET['success'])){
                             if($_GET['success'] == 1) {
                                 echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
                             }
                             else if($_GET['success'] == -1) {
                                 echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
                             }  
-                        } var_dump($_POST);
                         
                         ?>
                         
@@ -288,7 +286,7 @@
                             <label for="name">Name</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                            <input type="text" name="name" id="name" placeholder="Your name" required> 
                         </div>
                     </div>
                     <div class="row">
