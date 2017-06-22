@@ -1,20 +1,3 @@
-<?php
-    session_start();
-    require_once "security.php";
-        
-    /*if($_GET['success'] == 1) {
-        echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
-    }
-    else if($_GET['success'] == -1) {
-        echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
-    }  */
-
-
-
-    $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
-    $fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
-?>
-
 <!DOCTYPE html>
  <html lang="en">
     <head>
@@ -284,16 +267,8 @@
             <div class="row">
                 
                 
-                
-                
-                
-                
-                
-                
                 <form method="post" action="mailer.php" class="contact-form">
-                    <div class="row">
-                        
-                        
+                    <div class="row">   
                         
                     <?php
                         if(isset($_GET['success'])){
@@ -305,9 +280,7 @@
                             }  
                         }
                     ?>
-
-                        
-                    
+   
                        
                         
                     </div>
@@ -401,7 +374,6 @@
             
         </footer>
         
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -410,16 +382,4 @@
     <script src="resources/js/script.js"></script>
         
     </body>
-    
-     
-    
-
-
 </html>
-
-<?php
-
-unset($_SESSION['errors']);
-unset($_SESSION['fields']);
-
-?>

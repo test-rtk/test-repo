@@ -1,10 +1,6 @@
 <?php
-    session_start();
-
     require_once 'libs/PHPMailer/PHPMailerAutoload.php';
 
-    $errors = [];
-    
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location: index.php?success=-1#form");
         exit;
@@ -31,7 +27,7 @@
             $m->isSMTP();
             $m->SMTPAuth = true;
             
-            //$m->SMTPDebug = 1;
+            $m->SMTPDebug = 1;
             
             $m->Host = 'smtp.gmail.com';
             $m->Username = 'mrcinkossend@gmail.com';
