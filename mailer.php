@@ -4,12 +4,12 @@
     require_once 'libs/PHPMailer/PHPMailerAutoload.php';
 
     $errors = [];
-    /*
-    if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: index.php?success=-1#form");
+    
+    /*if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: index.php?success=0#form");
         exit;
-    }
-    */
+    }*/
+    
     if(isset($_POST['name'], $_POST['email'], $_POST['message'])){
         
         $fields = [
@@ -31,7 +31,7 @@
             $m->isSMTP();
             $m->SMTPAuth = true;
             
-            //$m->SMTPDebug = 1;
+            $m->SMTPDebug = 1;
             
             $m->Host = 'smtp.gmail.com';
             $m->Username = 'mrcinkossend@gmail.com';
@@ -52,7 +52,7 @@
             if($m->send()){
                 header("Location: index.php?success=1#form");
             } else {
-                header("Location: index.php?success=-1#form");
+                header("Location: index.php?success=0#form");
             }
             
         }
@@ -64,5 +64,5 @@
     $_SESSION['errors'] = $errors;
     $_SESSION['fields'] = $fields;
     
-    header("Location: index.php?#form");
+    header("Location: index.php?success=1#form");
 ?>
