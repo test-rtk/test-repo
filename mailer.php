@@ -55,9 +55,6 @@
     } else {
         $errors[] = 'Something went wrong.';
     }
-
-    $_SESSION['errors'] = $errors;
-    $_SESSION['fields'] = $fields;
     
     header("Location: index.php?success=1#form");
 ?>
