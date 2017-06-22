@@ -29,6 +29,7 @@
     header("Location: index.php?success=1#form");
         */
     
+    session_start();
     require_once 'libs/PHPMailer/PHPMailerAutoload.php';
     $errors = [];
     
