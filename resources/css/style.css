@@ -51,7 +51,7 @@ section{
 }
 
 .box{
-    padding 1%;
+    padding: 1%;
 }
 
 /* ------ HEADINGS ------ */
@@ -84,8 +84,8 @@ h2:after{
     display: block;
     height: 2px;
     background-color: #e67e22;
-    content: " ";
-    width: 800px;
+    content: "";
+    width: 200px;
     margin: 0 auto 0 auto;
     margin-top: 30px;
 }
@@ -575,6 +575,10 @@ input[type=checkbox]{
     border-radius: 3px;
     margin-bottom: 30px;
     color: #333;
+}
+
+.form-messages {
+    text-align: center;
 }
 
 
