@@ -1,3 +1,20 @@
+<?php
+    session_start();
+    require_once "security.php";
+        
+    /*if($_GET['success'] == 1) {
+        echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
+    }
+    else if($_GET['success'] == -1) {
+        echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
+    }  */
+
+
+
+    $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
+    $fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
+?>
+
 <!DOCTYPE html>
  <html lang="en">
     <head>
@@ -265,18 +282,33 @@
                 <h2>Send us your review!</h2>
             </div>
             <div class="row">
+                
+                
+                
+                
+                
+                
+                
+                
                 <form method="post" action="mailer.php" class="contact-form">
                     <div class="row">
                         
-                        <?php
+                        
+                        
+                    <?php
+                        if(isset($_GET['success'])){
                             if($_GET['success'] == 1) {
                                 echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
                             }
                             else if($_GET['success'] == -1) {
                                 echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
                             }  
+                        }
+                    ?>
+
                         
-                        ?>
+                    
+                       
                         
                     </div>
                     
@@ -286,7 +318,7 @@
                             <label for="name">Name</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name" required> 
+                            <input type="text" name="name" id="name" placeholder="Your name">
                         </div>
                     </div>
                     <div class="row">
@@ -294,7 +326,7 @@
                             <label for="email">Email</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                            <input type="email" name="email" id="email" placeholder="Your email">
                         </div>
                     </div>
                     <div class="row">
@@ -384,3 +416,10 @@
 
 
 </html>
+
+<?php
+
+unset($_SESSION['errors']);
+unset($_SESSION['fields']);
+
+?>
