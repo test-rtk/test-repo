@@ -285,7 +285,7 @@
                 
                 
                 
-                
+                 
                 
                 
                 
@@ -294,8 +294,8 @@
                     <div class="row">
                         
                         
-                        
-                    <?php
+                    <!--    
+                    < ? php
                         if(isset($_GET['success'])){
                             if($_GET['success'] == 1) {
                                 echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
@@ -306,9 +306,16 @@
                         }
                     ?>
 
-                        
+                        -->
                     
-                       
+                        
+                        
+                    <?php if(!empty($errors)): ?>
+                        <div class="panel">
+                            <ul><li><?php echo implode('</li><li>', $errors); ?></li></ul>
+                        </div>   
+                    <?php endif;?>   
+                        
                         
                     </div>
                     
@@ -318,7 +325,7 @@
                             <label for="name">Name</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your name">
+                            <input type="text" name="name" id="name" placeholder="Your name" <?php echo isset($fields['name']) ? 'value=" ' . e($fields['name']) . ' "' : '' ?>>
                         </div>
                     </div>
                     <div class="row">
@@ -326,7 +333,7 @@
                             <label for="email">Email</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="email" name="email" id="email" placeholder="Your email">
+                            <input type="email" name="email" id="email" placeholder="Your email" <?php echo isset($fields['email']) ? 'value=" ' . e($fields['email']) . ' "' : '' ?>>
                         </div>
                     </div>
                     <div class="row">
@@ -355,7 +362,7 @@
                             <label>Write us something</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <textarea name="message" placeholder="Your message"></textarea>
+                            <textarea name="message" placeholder="Your message"><?php echo isset($fields['message']) ? e($fields['message']) : '' ?></textarea>
                         </div>
                     </div>
                     <div class="row">
