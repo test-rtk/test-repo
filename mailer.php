@@ -8,7 +8,7 @@
 
     //check the data
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)){
-        header("Location: http://wwww.mdominovic.github.io/cinkos/index.php?success=-1#form");
+        header("Location: index.php?success=-1#form");
         exit;
     }
 
@@ -30,7 +30,7 @@
     mail($recipient, $subject, $email_content, $email_headers);
         
     // Redirect to the index.html page with succes code
-    header("Location: http://wwww.mdominovic.github.io/cinkos/index.php?success=1#form");
+    header("Location: index.php?success=1#form");
         
 ?>
     
