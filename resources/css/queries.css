@@ -107,6 +107,11 @@
     
     .works-step { margin-bottom: 20px; }
     .works-step:last-of-type{ margin-bottom: 20px; }
+    
+    .btn-menu{
+        width: 50%;
+        margin-top: 25px;
+    }
 }
 
 
