@@ -42,7 +42,7 @@
             </nav>
             <div class="hero-text-box">
                 <h1>Sugary paradise.</h1>
-                <a class="btn btn-full js--scroll-to-plans" href="#">I want diabetes</a>
+                <a class="btn btn-full js--scroll-to-plans" href="#">Diabetes</a>
                 <a class="btn btn-ghost js--scroll-to-start" href="#">View more</a>
                 
             </div>
