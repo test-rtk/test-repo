@@ -12,13 +12,25 @@ $(document).ready(function (){
     });
     
     
-    /* Scroll on buttons */
+    /* Scroll on buttons INDEX*/
     $('.js--scroll-to-plans').click(function (){
         $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000);
     });
     $('.js--scroll-to-start').click(function (){
         $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000);
     });
+    
+    /* Scroll on buttons MENU */
+    $('.js--scroll-to-sweet').click(function (){
+        $('html, body').animate({scrollTop: $('.js--section-sweet').offset().top}, 1000);
+    });
+    $('.js--scroll-to-savoury').click(function (){
+        $('html, body').animate({scrollTop: $('.js--section-savoury').offset().top}, 1000);
+    });
+    $('.js--scroll-to-beverages').click(function (){
+        $('html, body').animate({scrollTop: $('.js--section-beverages').offset().top}, 1000);
+    });
+    
     
     /*Navigation scroll */
     

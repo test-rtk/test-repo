@@ -203,23 +203,13 @@ input[type=submit]:active{
 /* HEADER */
 /* ----------------------------------------------- */
 
-.header{
+header{
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/7.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/7.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
-}
-
-
-.hmenu{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/777.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/777.png);
-    background-size: cover;
-    background-position: center;
-    height: 30vh;
-    background-attachment: scroll;
 }
 
 .hero-text-box{
