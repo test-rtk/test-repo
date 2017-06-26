@@ -691,12 +691,3 @@ footer p{
 .js--wp-3.animated{
     opacity: 1;
 }
-
-/* ----------------------------------------------- */
-/* ANIMATIONS */
-/* ----------------------------------------------- */
-
-.menubck{
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/7.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/7.jpg);
-}
