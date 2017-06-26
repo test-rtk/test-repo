@@ -26,7 +26,7 @@
     
     </head>
     <body>
-        <header>
+        <header class="header">
             <nav>
                 <div class="row">
                     <img src="resources/img/logoWhite.png" alt="Mr.Činkos" class="logo">
