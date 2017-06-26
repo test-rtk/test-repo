@@ -1,15 +1,6 @@
 <?php
     session_start();
     require_once "security.php";
-        
-    /*if($_GET['success'] == 1) {
-        echo "<div class=\"form-messages success\">Thank you! Your message has been sent.</div>";
-    }
-    else if($_GET['success'] == -1) {
-        echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
-    }  */
-
-
 
     $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
     $fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
@@ -42,7 +33,7 @@
                     <img src="resources/img/logoBlack.png" alt="Mr.Činkos" class="logo-black">
                     <ul class="main-nav js--main-nav">
                         <li><a href="#features">Pancake delivery</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="menu.html">Menu</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#plans">Sign up</a></li>
                     </ul>
@@ -207,89 +198,14 @@
             </div>
         </section>
         
-        
-        <section class="section-plans js--section-plans" id="plans">
-            <div class="row">
-                <h2>Get our crepes daily without ordering</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <div class="plan-box js--wp-4">
-                        <div>
-                            <h3>Platinum</h3>
-                            <p class="plan-price">$399 <span>/ month</span></p>
-                            <p class="plan-price-meal">That's only 13.30$ per crepe</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every day</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>New creations before others</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>                                
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-full">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Gold</h3>
-                            <p class="plan-price">$149 <span>/ month</span></p>
-                            <p class="plan-price-meal">That's only 14.90$ per crepe</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal every 3 day</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>New creations before others</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>                                
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-ghost">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h3>Silver</h3>
-                            <p class="plan-price">$19 <span>/ meal</span></p>
-                            <p class="plan-price-meal">&nbsp;</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 meal</li>
-                                <li><i class="ion-ios-close-empty icon-small"></i>New creations before others</li>
-                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 10 am to 11pm</li>
-                                <li><i class="ion-ios-close-empty icon-small"></i>Free delivery</li>                                
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-ghost">Sign up now</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        
         <section class="section-form" id="form">
             <div class="row">
                 <h2>Send us your review!</h2>
             </div>
             <div class="row">
                 
-                
-                
-                
                 <form method="post" action="mailer.php" class="contact-form">
                     <div class="row">
-                        
-                        
                         
                     <?php
                         if(isset($_GET['success'])){
@@ -300,18 +216,7 @@
                                 echo "<div class=\"form-messages error\">Oops! Something went wrong. Please try again.</div>";
                             }  
                         }
-                    ?>
-
-                    
-                    
-                        
-                    <!--    
-                    < ? php if(!empty($errors)): ?>
-                        <div class="panel">
-                            <ul><li><?php echo implode('</li><li>', $errors); ?></li></ul>
-                        </div>   
-                    < ? php endif;?>   
-                    -->    
+                    ?> 
                         
                     </div>
                     
@@ -343,14 +248,6 @@
                                 <option value="ad">Advert</option>
                                 <option value="other">Other</option>
                             </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Newsletter?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked>Of course
                         </div>
                     </div>
                     <div class="row">
