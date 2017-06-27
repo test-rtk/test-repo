@@ -29,20 +29,19 @@
         <header>
             <nav>
                 <div class="row">
-                    <img src="resources/img/logoWhite.png" alt="Mr.Činkos" class="logo">
-                    <img src="resources/img/logoBlack.png" alt="Mr.Činkos" class="logo-black">
+                    <a href="index.php"><img src="resources/img/logoWhite.png" alt="Mr.Činkos" class="logo"></a>
+                    <a href="index.php"><img src="resources/img/logoBlack.png" alt="Mr.Činkos" class="logo-black" href="index.php"></a>
                     <ul class="main-nav js--main-nav">
-                        <li><a href="#features">Pancake delivery</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#plans">Sign up</a></li>
+                        <li><a href="#">Where are we?</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Sugary paradise.</h1>
-                <a class="btn btn-full js--scroll-to-plans" href="#">Diabetes</a>
+                <a class="btn btn-full" href="menu.html">Menu</a>
                 <a class="btn btn-ghost js--scroll-to-start" href="#">View more</a>
                 
             </div>
@@ -223,7 +222,7 @@
                     
                     <div class="row">                     
                         <div class="col span-1-of-3">
-                            <label for="name">Name</label>
+                            <label for="name">Name:</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="text" name="name" id="name" placeholder="Your name" required <?php echo isset($fields['name']) ? 'value="' . e($fields['name']) . '"' : '' ?>>
@@ -231,7 +230,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="email">Email</label>
+                            <label for="email">Email:</label>
                         </div>
                         <div class="col span-2-of-3">
                             <input type="email" name="email" id="email" placeholder="Your email" required <?php echo isset($fields['email']) ? 'value=" ' . e($fields['email']) . ' "' : '' ?>>
@@ -239,20 +238,7 @@
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="find-us">How you discovered us?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <select name="find-us" id="find-us">
-                                <option value="friends" selected>Friends</option>
-                                <option value="search">Google</option>
-                                <option value="ad">Advert</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Write us something</label>
+                            <label>Write us something:</label>
                         </div>
                         <div class="col span-2-of-3">
                             <textarea name="message" placeholder="Your message"><?php echo isset($fields['message']) ? e($fields['message']) : '' ?></textarea>
@@ -263,7 +249,7 @@
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="submit" value="Send">
+                            <input type="submit" name="submit" value="Send">
                         </div>
                     </div>
                     

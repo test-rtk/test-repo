@@ -55,6 +55,16 @@
                 header("Location: index.php?success=0#form");
             }
             
+            /*if(!@mysqli_connect("localhost","root","","cinkos")){
+                die('Could not connect to database!');
+            } else {
+                $sql="INSERT INTO users (name,email,message) VALUES (" . $fields['name'] . "," . $fields['email'] . "," . $fields['message'] . ");";
+                if($query_run = mysql_query($sql)){
+                    echo "Query success.";
+                } else {
+                    echo "Query failed.";
+                }
+            }*/
         }
         
     } else {
@@ -63,4 +73,37 @@
 
     $_SESSION['errors'] = $errors;
     $_SESSION['fields'] = $fields;
+?>
+
+<?php 
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "cinkos";
+
+$ime = $fields['name'];
+$eposta = $fields['email'];
+$poruka = $fields['message'];
+
+if(isset($_POST['name'], $_POST['email'], $_POST['message'])){
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+    
+    $sql="INSERT INTO users (name, email, message) VALUES ('$ime','$eposta','$poruka')";
+    
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+} echo "Error in MySql";
+
+
+$conn->close();
+
 ?>
