@@ -148,7 +148,7 @@
         
         <div class="map-box js--section-map" id="idmap">
             
-            <div class="map"></div>
+            
             
             <div class="about-box">
                 <div class="row">
@@ -158,8 +158,13 @@
                     <p class="long-copy">Sweetest place in Osijek is settled at St. Stjepan Radić 30a near EFOS and PRAVOS. We are open from 10am till 11pm (from 4pm to 11pm on sundays). If you have any questions feel free to contact us in form below or on our facebook page. For freshest updates follow us on Instagram and Facebook.</p>
                     <img class="cinkman" src="resources/img/cinkosMAN.png">
                 </div>
-            </div>    
+            </div>
+            
+            
         </div>
+        
+        <div class="map"></div>
+        
         
         <section class="section-testimonials">
             <div class="row">
