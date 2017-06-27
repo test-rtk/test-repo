@@ -16,8 +16,8 @@ $(document).ready(function (){
     $('.js--scroll-to-plans').click(function (){
         $('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000);
     });
-    $('.js--scroll-to-start').click(function (){
-        $('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000);
+    $('.js--scroll-to-map').click(function (){
+        $('html, body').animate({scrollTop: $('.js--section-map').offset().top}, 1000);
     });
     
     /* Scroll on buttons MENU */
@@ -94,6 +94,25 @@ $(document).ready(function (){
             icon.removeClass('ion-close-round');
         }        
     });
+    
+    /* MAP */
+    
+    var map = new GMaps({
+      div: '.map',
+      lat: 45.5565785,
+      lng: 18.6854537,
+      zoom: 17
+    });
+    
+    map.addMarker({
+      lat: 45.5565785,
+      lng: 18.6824537,
+      title: 'Cinkos',
+      infoWindow: {
+          content: '<p>Mr.Cinkos Base</p>'
+        }
+    });
+    
     
     
 });

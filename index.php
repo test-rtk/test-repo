@@ -36,13 +36,13 @@
                         <li><a href="menu.html">Menu</a></li>
                         <li><a href="#">Where are we?</a></li>
                     </ul>
-                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+<!--                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>-->
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Sugary paradise.</h1>
                 <a class="btn btn-full" href="menu.html">Menu</a>
-                <a class="btn btn-full js--scroll-to-start" href="#">Where are we?</a>
+                <a class="btn btn-full js--scroll-to-map" href="#">Where are we?</a>
                 
             </div>
             
@@ -137,39 +137,20 @@
             </ul>
         </section>
         
-        <section class="section-steps">
-            <div class="row">
-                <h2>How it works &mdash; Simple as 1,2,3</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <img src="resources/img/fonono.png" alt="Cinkos app on iPhone" class="app-screen js--wp-3">
+        <div class="map-box js--section-map">
+            
+            <div class="map"></div>
+            
+            <div class="about-box">
+                <div class="row">
+                    <h2>About us</h2>
                 </div>
-                <div class="col span-1-of-2">
-                    <div class="works-step">
-                        <div>1</div>
-                        <p>
-                            Choose what suits you the best and sign up today. Choose what suits you the best and sign up today.
-                        </p>
-                    </div>
-                    <div class="works-step">
-                        <div>2</div>
-                        <p>
-                            Order your pancakes through our app, website or just make a call. 
-                        </p>
-                    </div>
-                    <div class="works-step">
-                        <div>3</div>
-                        <p>
-                            Enjoy your sweet crepes in no more than 20 minutes.
-                        </p>
-                    </div>
-                    
-                    <a href="https://www.apple.com/hr/itunes/" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
-                    <a href="https://play.google.com/store" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"></a>
+                <div class="row">
+                    <p class="long-copy">Sweetest place in Osijek is settled at Street of Stjepan Radić 30a near EFOS and PRAVOS. We are open from 10am till 11pm (from 4pm to 11pm on sundays). If you have any questions feel free to contact us in form below or on our facebook page. For freshest updates follow us on Instagram and Facebook.</p>
+                    <img class="cinkman" src="resources/img/cinkosMAN.png">
                 </div>
-            </div>
-        </section>
+            </div>    
+        </div>
         
         <section class="section-testimonials">
             <div class="row">
@@ -290,7 +271,11 @@
     <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqQWQC4v52rV2KD1wbxPP4VU1fMdCBp7o&callback=myMap"></script>
+
     <script src="resources/js/script.js"></script>
+    <script src="resources/js/gmaps.js"></script>
+    
         
     </body>
     
