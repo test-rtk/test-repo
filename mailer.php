@@ -4,12 +4,7 @@
     require_once 'libs/PHPMailer/PHPMailerAutoload.php';
 
     $errors = [];
-    
-    /*if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: index.php?success=0#form");
-        exit;
-    }*/
-    
+
     if(isset($_POST['name'], $_POST['email'], $_POST['message'])){
         
         $fields = [
@@ -55,16 +50,6 @@
                 header("Location: index.php?success=0#form");
             }
             
-            /*if(!@mysqli_connect("localhost","root","","cinkos")){
-                die('Could not connect to database!');
-            } else {
-                $sql="INSERT INTO users (name,email,message) VALUES (" . $fields['name'] . "," . $fields['email'] . "," . $fields['message'] . ");";
-                if($query_run = mysql_query($sql)){
-                    echo "Query success.";
-                } else {
-                    echo "Query failed.";
-                }
-            }*/
         }
         
     } else {
@@ -76,7 +61,7 @@
 ?>
 
 <?php 
-
+// DB input
 $servername = "localhost";
 $username = "root";
 $password = "";

@@ -23,7 +23,15 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <title>Mr. Činkos</title>
     
-    
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/resources/favicons/manifest.json">
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
     </head>
     <body>
         <header>
@@ -34,8 +42,9 @@
                     <ul class="main-nav js--main-nav">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="menu.html">Menu</a></li>
-                        <li><a href="#">Where are we?</a></li>
+                        <li><a href="index.php?#idmap">Where are we?</a></li>
                     </ul>
+<!--                    hamburger-->
 <!--                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>-->
                 </div>
             </nav>
@@ -137,7 +146,7 @@
             </ul>
         </section>
         
-        <div class="map-box js--section-map">
+        <div class="map-box js--section-map" id="idmap">
             
             <div class="map"></div>
             
@@ -146,7 +155,7 @@
                     <h2>About us</h2>
                 </div>
                 <div class="row">
-                    <p class="long-copy">Sweetest place in Osijek is settled at Street of Stjepan Radić 30a near EFOS and PRAVOS. We are open from 10am till 11pm (from 4pm to 11pm on sundays). If you have any questions feel free to contact us in form below or on our facebook page. For freshest updates follow us on Instagram and Facebook.</p>
+                    <p class="long-copy">Sweetest place in Osijek is settled at St. Stjepan Radić 30a near EFOS and PRAVOS. We are open from 10am till 11pm (from 4pm to 11pm on sundays). If you have any questions feel free to contact us in form below or on our facebook page. For freshest updates follow us on Instagram and Facebook.</p>
                     <img class="cinkman" src="resources/img/cinkosMAN.png">
                 </div>
             </div>    
@@ -246,8 +255,8 @@
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
                         <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Press</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
@@ -259,7 +268,7 @@
             </div>
             <div class="row">
                 <p>
-                    Copright &copy; 2017 by Mr. ČinkOs. All rights reserved.
+                    Copright &copy; 2017 by Mr. CinkOs. All rights reserved.
                 </p>
             </div>
             

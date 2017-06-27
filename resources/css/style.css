@@ -452,7 +452,7 @@ a.btn-app{
 
 .cinkman{
     display: block;
-    height: 200px;
+    height: 150px;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -721,4 +721,41 @@ footer p{
 .js--wp-1.animated,
 .js--wp-3.animated{
     opacity: 1;
+}
+
+
+
+/* ----------------------------------------------- */
+/* MENU */
+/* ----------------------------------------------- */
+
+
+table {
+    font-family: arial, sans-serif;
+    font: 14px sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+th {
+    background-color: #ffc99a;
+/*                background-color: #e67e22;*/
+}
+
+.menu-body{
+    background-color: #333;
 }
