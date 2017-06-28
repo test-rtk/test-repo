@@ -45,7 +45,7 @@
                         <li><a href="index.php?#idmap">Where are we?</a></li>
                     </ul>
 <!--                    hamburger-->
-<!--                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>-->
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
